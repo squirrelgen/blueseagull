@@ -1,0 +1,100 @@
+{
+	"bridge": {
+		"name": "Homebridge",
+		"username": "CC:22:3D:E3:CE:30",
+		"port": 51826,
+		"pin": "031-45-154"
+	},
+
+	"platforms": [{
+		"platform": "WiringPiPlatform",
+		"name": "Pi GPIO (WiringPi)",
+		"overrideCache": "true",
+		"autoExport": "true",
+		"gpiopins": [{
+			"name": "GPIO2",
+			"pin": 18,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO3",
+			"pin": 12,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO4",
+			"pin": 16,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO5",
+			"pin": 20,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO6",
+			"pin": 21,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO7",
+			"pin": 6,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO8",
+			"pin": 13,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO9",
+			"pin": 19,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}, {
+			"name": "GPIO10",
+			"pin": 26,
+			"enabled": "true",
+			"mode": "out",
+			"pull": "down",
+			"inverted": "true",
+			"duration": 0
+		}]
+	}, {
+		"platform": "LifxLan",
+		"name": "LiFx"
+	}, {
+		"platform": "SmtpSensor",
+		"port": "2525",
+		"sensors": {
+			"name": "Living Room Camera",
+			"keyword": "Living Room"
+		}
+
+
+	}]
+}
